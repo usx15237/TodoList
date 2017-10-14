@@ -1,17 +1,12 @@
 import React from 'react'
+import TodoBox from './todobox'
 import { render } from 'react-dom'
+ 
+import './index.css';//使用require导入css文件
 
-import './static/css/common.less'
-
-class Hello extends React.Component {
-    render() {
-        return (
-            <p>hello world</p>
-        )
-    }
-}
 
 render(
-    <Hello/>,
+    <TodoBox/>,  
     document.getElementById('root')
 )
+ 
